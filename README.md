@@ -1,16 +1,17 @@
-# Basic Transformer For next character prediction
+# Basic Transformer and LSTM For next character prediction
 
-This repository contains a minimal character-level Transformer (decoder-only) implemented in JAX/Flax for next-character prediction. 
+This repository contains a minimal character-level Transformer (decoder-only) and LSTM implemented in JAX/Flax for next-character prediction. 
 
 Repository structure
 --------------------
 
 Top-level layout:
 
-- `transformer.ipynb` - Primary Jupyter notebook used for experimenting, training and generation. The notebook contains data loading, model initialization, training loop, and a JITted token generator cell.
-- `models/` - Python package containing the Flax model implementation.
-	- `models/models.py` - Minimal, decoder-only Transformer implementation (token & positional embeddings, DecoderBlocks, MLP, weight tying, causal attention).
-- `data/` - a preprocessed `text8_dataset` used in the notebook.
+- `LSTM.ipynb` - Primary Jupyter notebook used for experimenting, training and generation for the LSTM model. The notebook contains data loading, model initialization, hyperparameter tuning and optimization, training loop, evaluation on test set, and a JITted token generator cell.
+- `LSTM_BO_pics/` - Contains pictures of plotted graphs in the LSTM.ipynb file.
+- `LSTM_utils/` - Contains stored checkpoints and hyperparameters from running the LSTM.ipynb file.
+- `data/` - Contains the train and test data used for this assingment
+
 
 
 Notes and pointers
