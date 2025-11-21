@@ -1,0 +1,8 @@
+{
+    "hidden_size": 512,
+    "num_layers": 4,
+    "lr": 0.0007228785934213479,
+    "batch_size": 64,
+    "block_size": 128,
+    "dropout_rate": 0.027827171269309104
+}
